@@ -1,0 +1,241 @@
+[
+    
+
+    {
+        "id":1.1,
+        "name":"Samsung Galaxy M13 (Midnight Blue, 4GB, 64GB Storage) | 6000mAh Battery | Upto 8GB RAM with RAM Plus",
+        "category_id":1,
+        "Price":"400$",
+        "image":"https://images.samsung.com/is/image/samsung/p6pim/in/sm-m135fznqins/gallery/in-galaxy-m13-sm-m135-sm-m135fznqins-533230983?$730_584_PNG$",
+        "reviews":80,
+        "details":["6000mAh lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase","Upto 12GB RAM with RAM Plus | 64GB internal memory expandable up to 1TB| Dual Sim (Nano)","50MP+5MP+2MP Triple camera setup- True 50MP (F1.8) main camera +5MP(F2.2)+ 2MP (F2.4) | 8MP (F2.2) front cam","Android 12,One UI Core 4 with a powerful Octa Core Processor",
+        "16.72 centimeters (6.6-inch) FHD+ LCD - infinity O Display, FHD+ resolution with 1080 x 2408 pixels resolution, 401 PPI with 16M color"]
+    },
+    {
+        "id":1.2,
+        "name":"Samsung Galaxy M53 5G (Deep Ocean Blue, 8GB, 128GB Storage) | 108MP | sAmoled+ 120Hz | 16GB RAM with RAM Plus | Travel Adapter to be Purchased Separately",
+        "category_id":1,
+        "Price":"250$",
+        "reviews":80,
+        "image":"https://m.media-amazon.com/images/I/81yL2dXKTHL._SX679_.jpg",
+        "details":["Segment Best 108MP Quad Camera Setup, with exciting features like Single Take, Object Eraser, and Photo Remaster","6.7-inch Super AMOLED Plus Display, FHD+ resolution, 1080x2400 pixels with 120Hz Refresh Rate","MTK D900 Octa Core 2.4GHz 6nm Processor with 4x4 Mimo Band support for a HyperFast 5G experience","Latest Android v12.0, One UI 4 operating system"]
+    },
+    {
+        "id":1.3,
+        "name":"Samsung Galaxy M32 Prime Edition (Light Blue, 4GB RAM, 64GB)",
+        "category_id":1,
+        "Price":"200$",
+        "reviews":80,
+        "image":"https://m.media-amazon.com/images/I/81OC0ojxH6L._SL1500_.jpg",
+        "details":["Segment Best 16.21 centimeters (6.4-inch) Super AMOLED - Infinity U-cut display, FHD+ resolution with 90Hz Refresh rate, 800 Nits High Brightness Mode, protected by Gorilla Glass 5","Monster 6000 mAh Battery | Memory, Storage & SIM: 4GB RAM | 64GB internal memory expandable up to 1TB| SIM 1 + SIM 2 + MicroSD","Android v12.0, One UI 4.1 operating system with MediaTek | Helio G80 Octa Core Processor 2GHz,1.8GHz","6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase"]
+    },
+    {
+        "id":1.4,
+        "name":"Redmi A1 (Light Blue, 2GB RAM, 32GB Storage) | Segment Best AI Dual Cam | 5000mAh Battery | Leather Texture Design | Android 12",
+        "category_id":1,
+        "Price":"310$",
+        "reviews":280,
+        "image":"https://m.media-amazon.com/images/I/81UT07JsBqL._SL1500_.jpg",
+        "details":["Display: 16.56cm HD+ Scratch resistant display","Processor: MediaTek Helio A22 processor; up to 2.0GHz","Camera: 8MP Dual camera | 5MP Front camera","Memory, Storage & SIM: 2GB LPDDR4x RAM | 32GB storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)"]
+    },
+    {
+        "id":2.1,
+        "name":"HP Laptop",
+        "category_id":2,
+        "Price":"349$",
+        "reviews":280,
+        "image":"https://m.media-amazon.com/images/I/71zBGwi8X7L._AC_UY327_FMwebp_QL65_.jpg",
+        "details":["AMD Ryzen™ 5 processor","Windows 11 Home","39.6 cm (15.6) diagonal FHD display","NVIDIA® GeForce® GTX 1650","512 GB PCIe® NVMe™ M.2 SSD","8 GB DDR4-3200 MHz RAM (1 x 8 GB)","1.98 kg"]
+    },
+    {
+        "id":2.2,
+        "name":"HP Pavilion Gaming Laptop 15 (39.62 cm) ec2150AX ",
+        "category_id":2,
+        "Price":"359$",
+        "reviews":280,
+        "image":"https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/5/8/589X6PA-1_T1656562474.png",
+        "details":["AMD Ryzen™ 5 processor","Windows 11 Home","39.6 cm (15.6) diagonal FHD display","NVIDIA® GeForce® GTX 1650","512 GB PCIe® NVMe™ M.2 SSD","8 GB DDR4-3200 MHz RAM (1 x 8 GB)","1.98 kg"]
+    },
+    {
+        "id":2.3,
+        "name":"HP Pavilion Laptop 14-ec1003AU",
+        "category_id":2,
+        "Price":"289$",
+        "reviews":280,
+        "image":"https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/5/8/589X6PA-1_T1656562474.png",
+        "details":["AMD Ryzen™ 5 processor","Windows 11 Home","35.6 cm (14) diagonal FHD display","AMD Radeon™ Graphics","512 GB PCIe® NVMe™ M.2 SSD","8 GB DDR4-3200 MHz RAM (1 x 8 GB)","1.41 kg"]
+    },
+    {
+        "id":2.4,
+        "name":"HP Laptop 15s-eq2144AU",
+        "category_id":2,
+        "Price":"229$",
+        "reviews":280,
+        "image":"https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/5/0/50M63PA-1_T1656563298.png",
+        "details":["AMD Ryzen™ 5 processor","Windows 11 Home","35.6 cm (14) diagonal FHD display","AMD Radeon™ Graphics","512 GB PCIe® NVMe™ M.2 SSD","8 GB DDR4-3200 MHz RAM (1 x 8 GB)","1.41 kg"]
+    },
+    {
+        "id":2.5,
+        "name":"HP ENVY x360 Convert 13-ay1035AU",
+        "category_id":2,
+        "Price":"409$",
+        "reviews":280,
+        "image":"https://in-media.apjonlinecdn.com/catalog/product/cache/74c1057f7991b4edb2bc7bdaa94de933/5/4/54B71PA-4_T1656563145.png",
+        "details":["AMD Ryzen™ 5 processor","Windows 11 Home","33.8 cm (13.3) diagonal FHD touch display","AMD Radeon™ Graphics","512 GB PCIe® NVMe™ M.2 SSD","16 GB DDR4-3200 MHz RAM (onboard)","1.3 kg","FPR; Backlit KBD; Alexa in-built"]
+    },
+    {
+        "id":3.1,
+        "name":"Ultrawide Monitor",
+        "category_id":3,
+        "Price":"400$",
+        "reviews":80,
+        "image":"https://specials-images.forbesimg.com/imageserve/5ede6a4407e58a0007201a40/960x0.jpg?cropX1=33&cropX2=1935&cropY1=0&cropY2=1267",
+        "details":["34 Inch IPS Ultrawide 21:9 QHD (3440 x 1440) Zero Frame Design Monitor with AMD Radeon FreeSync Premium Technology, Eliminating screen tearing, Minimizing lag and latency.","Strong, Robust Ergonomic Stand I Firm Stainless Steel Base you can easily tilt, pivot, swivel and make height adjustments at a moment’s notice I VESA Wall Mount Support","Connectivity Options Include 2 X HDMI (v2.0) 1 X DP (v1.4) USB 3.0 X 2 (USB-B 1up 2down) ports with Inbox HDMI and USB 3.0 Cables I Audio out I 3W X 2 Stereo Speakers","AMD Radeon™ Graphics","Care for your eyes with Acer VisionCare technology incorporates several features that take into consideration prolonged usage by heavy users I Acer Flicker-less I Acer BlueLightShield PRO I Low dimming technology I Acer ComfyView display"]
+    },
+    {
+        "id":3.2,
+        "name":"General Monitor",
+        "category_id":3,
+        "Price":"270$",
+        "reviews":30,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhX93oPl7ke3pW30m6Bf8yuVtZXLztiDg4Jw&usqp=CAU",
+        "details":["21.5 Inch Ergonomic & Flicker-Free Monitor, Made in India","Ideal for multiple roles (home & office) with HDMI (1.4) & VGA Display Connectivity ports with Audio input (3.5mm)","Ultra-wide angle of 170°/160° avoids strain to the neck. Blue light setting prevents eye strain even when used for long periods of time","Monitor comes with 2 X 2W Built-In speakers for excellent audio performance without the need for an external speaker. Wall Mount - VESA Mount 100 x 100 availability.","Package contains Monitor with stand, Power adapter & HDMI cable along with User Manual.","3 Year Warranty"]
+    },
+    {
+        "id":3.3,
+        "name":"Apple Mouse",
+        "category_id":3,
+        "Price":"500$",
+        "reviews":2000,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdOnc-l4LAoW_xfugMRR9iUj_6tH4sKpcDgg&usqp=CAU",
+        "details":["USB PLUG AND PLAY & ADVANCED OPTIC CURSOR","MULTI FUNCTION BUTTONS】- 7D Buttons give you many options in your one hand for Office and Designing work. ","Relieves Hand Fatigue】- With the latest ergonomic design, the wireless mouse perfectly matches the position of each of your fingers. ","POWER SAVING MODE"]
+    },
+    {
+        "id":3.4,
+        "name":"Titan Earphones",
+        "category_id":3,
+        "Price":"8$",
+        "reviews":20,
+        "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZnLxLWRYFqu5bscSZe09eCmptznpnGfD18w&usqp=CAU",
+        "details":["Enjoy balanced sound without artificially enhanced Bass and volume that hurts your ears. This helps you enjoy the full bandwidth of crystal clear audio with no distortion","12.5mm Dynamic Drivers cased in ergonomically designed comfort fit earbuds"]
+    },
+    {
+        "id":4.1,
+        "name":"Mens Winter Jacket",
+        "category_id":4,
+        "Price":"40$",
+        "reviews":380,
+        "image":"https://img1.exportersindia.com/product_images/bc-full/2020/4/6948333/mens-winter-jacket-1586596696-5367842.jpeg",
+        "details":["An Amazon Brand","Color Name: Camel","Material: Synthetic","Long Sleeve","Dry Clean Only","Collar Style: Band; Fit Type: Regular"]
+    },
+
+    {
+        "id":4.2,
+        "name":"Mens Blazer",
+        "category_id":4,
+        "Price":"40$",
+        "reviews":380,
+        "image":"https://bisarga.com/wp-content/uploads/2021/06/images-5-Copy.jpg",
+        "details":["Care Instructions: Dry Clean Only","Material: 100% High Quality Terry Rayon Fabric, Sturdy Stitching, Notched Lapel","Front: Single Button, Two Hand Pockets at Sides, Back: Two Vent","Long Sleeve","In Package: 1 Blazer, 1 Cover, 1 Hanger & 1 Blazer Travel Essential Guide ","Style Tip: Team it Casually with a Jeans or Trouser and a Pocket Square to give that Elegant Casual look, Suitable for Party, Weddings, Engagement, Gift for Families, Friends & Boyfriend"]
+    },
+    {
+        "id":4.3,
+        "name":"Lexiart Mens Fashion Henley Shirts Long Sleeve",
+        "category_id":4,
+        "Price":"24$",
+        "reviews":380,
+        "image":"https://m.media-amazon.com/images/I/717GgyURd+L._AC_UL1500_.jpg",
+        "details":["Cotton blend","Button closure","Machine Wash","【MATERIAL】: Cotton blend, breathable,skin-friendly.","【FEATURE】: Solid Color, Big&Tall, Lightweight, Short Sleeve, Stretchy, Slim Fit, Pullover.","【SIZE】: Please check size chart before order."]
+    },
+    {
+        "id":4.4,
+        "name":"Van Heusen Men's Regular Fit Polo Shirt",
+        "category_id":4,
+        "Price":"15$",
+        "reviews":380,
+        "image":"https://m.media-amazon.com/images/I/71V4RsIUADL._UY879_.jpg",
+        "details":["Care Instructions: Machine Wash","Occasion : Leisure Sport","Pattern : Solid","Material: 60%Cotton40%Polyester","Sleeves : Half Sleeves"]
+    },
+
+    {
+        "id":4.5,
+        "name":"adidas Men's Running Shoe",
+        "category_id":4,
+        "Price":"40$",
+        "reviews":380,
+        "image":"https://m.media-amazon.com/images/I/61lGBnCT8sL._UY695_.jpg",
+        "details":["Sole: Rubber","Closure: Lace-Up","Heel Height: 1.2 inches","Shoe Width: Medium","Adidas Sports Shoes","Light weight, Soft , Comfortable","100% Original Product"]
+    },
+    {
+        "id":4.6,
+        "name":" Mens Self Design Kurta",
+        "category_id":4,
+        "Price":"20$",
+        "reviews":380,
+        "image":"https://m.media-amazon.com/images/I/51EPzhgehyS._UX679_.jpg",
+        "details":["Care Instructions: Dry Clean Only","Neck Style: Collar Neck","Sleeve Type: Long Sleeve","Length Description: Knee Length"," Age Range Description: Adult","The clothes should fit comfortably."]
+    },
+    {
+        "id":5.1,
+        "name":"The Alchemist",
+        "category_id":5,
+        "Price":"25$",
+        "reviews":"38K",
+        "Author": "Paulo Coelho",
+        "image":"https://www.eng-literature.com/wp-content/uploads/2016/02/the-alchemist.jpg",
+        "info": "The Alchemist has become a modern classic, selling millions of copies around the world and transforming the lives of countless readers across generations. Paulo Coelho's masterpiece tells the mystical story of Santiago, an Andalusian shepherd boy who yearns to travel in search of a worldly treasure. His quest will lead him to riches far different—and far more satisfying—than he ever imagined"
+    },
+    {
+        "id":5.2,
+        "name":"Shoe Dog A Memoir by the Creator of Nike",
+        "category_id":5,
+        "Price":"20$",
+        "reviews":"23K",
+        "Author": "Phil Knight",
+        "image":"https://www.bcombinator.com/blog_images/10-lessons-we-learnt-from-shoe-dog-the-autobiography-of-nike-s-founder-600x400.png",
+        "info": "In 1962, fresh out of business school, phil knight borrowed $50 from his father and created a company with a simple mission: import high-quality, athletic shoes from japan. Selling the shoes from the boot of his Plymouth, knight grossed $8000 in his first year. Today, nike's annual sales top $30 billion. In an age of start-ups, nike is the ne plus ultra of all start-ups, and the swoosh has become a revolutionary, globe-spanning icon, one of the most ubiquitous and recognisable symbols in the world today. But knight, the man behind the swoosh, has always remained a mystery. Now, for the first time, he tells his story. Candid, humble, wry and gutsy, he begins with his crossroads moment when he decided to start his own business. He details the many risks and daunting setbacks that stood between him and his dream - along with his early triumphs. Above all, he recalls how his first band of partners and employees soon became a tight-knit band of brothers. Together, harnessing the transcendent power of a shared mission, and a deep belief in the spirit of sport, they built a brand that changed everything. A memoir rich with insight, humour and hard-won wisdom, this book is also studded with lessons - about building something from scratch, overcoming adversity, and ultimately leaving your mark on the world."
+    },
+    {
+        "id":5.3,
+        "name":"Ikigai",
+        "category_id":5,
+        "Price":"22$",
+        "reviews":"35K",
+        "Author": "Héctor García",
+        "image":"https://cdn.shopify.com/s/files/1/1163/9680/products/61170_1024x1024.jpg?v=1536585232",
+        "info": "THE INTERNATIONAL BESTSELLER We all have an ikigai. It's the Japanese word for ‘a reason to live’ or ‘a reason to jump out of bed in the morning’. It’s the place where your needs, desires, ambitions, and satisfaction meet. A place of balance. Small wonder that finding your ikigai is closely linked to living longer. Finding your ikigai is easier than you might think. This book will help you work out what your own ikigai really is, and equip you to change your life. You have a purpose in this world: your skills, your interests, your desires and your history have made you the perfect candidate for something. All you have to do is find it. Do that, and you can make every single day of your life joyful and meaningful."
+    },
+  
+    {
+        "id":5.4,
+        "name":"Think and Grow Rich",
+        "category_id":5,
+        "Price":"20$",
+        "reviews":"35K",
+        "Author": "Napoleon Hill",
+        "image":"https://m.media-amazon.com/images/I/61AtWVLF2CL._AC_UY327_FMwebp_QL65_.jpg",
+        "info": "Think and Grow Rich has been called the 'Granddaddy of All Motivational Literature.' It was the first book to boldly ask, 'What makes a winner?' The man who asked and listened for the answer, Napoleon Hill, is now counted in the top ranks of the world's winners himself. The most famous of all teachers of success spent 'a fortune and the better part of a lifetime of effort' to produce the 'Law of Success' philosophy that forms the basis of his books and that is so powerfully summarized in this one."
+    },
+    {
+        "id":5.5,
+        "name":"The Psychology of Money ",
+        "category_id":5,
+        "Price":"10$",
+        "reviews":"15K",
+        "Author": "Morgan Housel",
+        "image":"https://m.media-amazon.com/images/I/41BFrtvpNwS._SX332_BO1,204,203,200_.jpg",
+        "info": "Timeless lessons on wealth, greed, and happiness doing well with money isn?t necessarily about what you know. It?s about how you behave. And behavior is hard to teach, even to really smart people. How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people don?t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life?s most important matters."
+    },
+    {
+        "id":5.6,
+        "name":"Autobiography of a Yogi",
+        "category_id":5,
+        "Price":"8$",
+        "reviews":"202K",
+        "Author": "Paramahansa Yogananda",
+        "image":"https://m.media-amazon.com/images/I/41SMTiI1dcL._SX311_BO1,204,203,200_.jpg",
+        "info": "Autobiography of a Yogi is the story of the life of Paramahansa Yogananda (January 5, 1893?March 7, 1952) first published in 1946. Born as Mukunda Lal Ghosh in Gorakhpur, India, into a Bengali family, this book takes the reader on a journey into the life of Paramahansa Yogananda and his encounters with spiritual figures of both the East and West. Beginning from his childhood, his family life, to finding his guru and becoming a monk and establishing his teachings of Kriya Yoga meditation, this book allows the reader to see the spiritual yearning of the man and how he realizes that over the years. It draws on both his personal experiences?anecdotes and meetings with eminent spiritual personalities, his association with nineteenth-century master Lahiri Mahasaya who had prophesized the writing of this book?as well as how he travels across America lecturing and establishing his teachings in Los Angeles, California.Autobiography of a Yogi is an introduction to the methods of attaining God-realization and emphasizes the value of Kriya Yoga and a life of self-respect, calmness, determination, simple diet and regular exercise. It has been in print for the last seventy years and has been translated into over forty languages. It has been highly acclaimed as a spiritual classic and is designated as one of the ?100 Most Important Spiritual Books of the 20th Century.?"
+    }
+
+
+]
