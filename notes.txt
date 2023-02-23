@@ -1,0 +1,22 @@
+To stop the running server >>>>> press ctrl C 
+npm init -y --> if we dont want to answer any questions 
+npm run dev ----> to run with nodemon (apart from start kuch bhi chalana ho toh we have to write npm run dev)
+---> start is a keyword but dev is not a keyword
+---> this helps in continuous development apneaap restart hota rahega 
+
+Routs --------> In on eapplications we have multiple routs 
+Express -----> main use of express is to define routs 
+express is a frame work for nodejs 
+
+package.json, app.js, node_modules, gitignore are the basic structure of our application 
+
+-----------------------------------------------------
+
+4 methods while making an API ---------> CRUD
+C - Create (Post)
+R - Read (Get)
+U - Update (Put)
+D - Delete (Delete)
+
+
+What all Apis we require will be listed in apiDoc.md

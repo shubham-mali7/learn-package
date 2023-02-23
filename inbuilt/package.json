@@ -1,0 +1,11 @@
+{
+  "name": "inbuilt",
+  "version": "1.0.0",
+  "description": "This is node inbuilt",
+  "main": "fs.js",
+  "scripts": {
+    "start": "node staticApi.js"
+  },
+  "author": "Shubham M",
+  "license": "ISC"
+}
