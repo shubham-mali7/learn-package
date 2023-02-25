@@ -1,9 +1,18 @@
 - Page 1
 
-  > List of City
-  > List of Restaurants
-  > Restaurants wrt City
-  > List of QuickSearch
+# List of City
+
+> http://localhost:9500/location
+
+# List of Restaurants
+
+> http://localhost:9500/restaurants
+
+# Restaurants wrt City
+
+# List of QuickSearch/mealType
+
+> http://localhost:9500/mealType
 
 - Page 2
 
