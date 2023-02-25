@@ -99,3 +99,15 @@ app.get("/restaurants", (req, res) => {
     console.error("Error connecting to MongoDB:", err);
   }
 })();
+
+
+//--------------> 
+Params 
+> what we pass afetr/ ask afetr /
+> we need to define if we want to use it 
+> Should be used for passing 1 or 2 values 
+
+QueryParams
+> What we pass after ? 
+> No need to define if we want to use it 
+> Should be used for passing multiple values 

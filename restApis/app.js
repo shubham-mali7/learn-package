@@ -3,6 +3,7 @@
 const express = require("express");
 const app = express();
 const port = 9500;
+let cors = require("cors");
 const { MongoClient } = require("mongodb");
 const mongoUrl = "mongodb://0.0.0.0:27017/newProducts";
 //test is the name of database in which i have the lcations collection

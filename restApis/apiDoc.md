@@ -36,3 +36,14 @@
   > List of all order wrt email
   > Update the order (Put)
   > Delete Order (Delete)
+
+/////////////////////////////////////////
+
+Find with Condition
+
+> db.Collection.find({state_id:1}).pretty()
+> ex--> db.restaurants.find({state_id:1}).pretty()
+> ex2--> db.restaurants.find({state_id:2}).pretty()
+
+- Based on two parameters
+  > ex2--> db.restaurants.find({state_id:2,average_rating:4}).pretty()
