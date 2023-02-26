@@ -9,6 +9,9 @@ const mongoUrl = "mongodb://0.0.0.0:27017/newProducts";
 //test is the name of database in which i have the lcations collection
 let db;
 
+// middleware ----> Supporting library
+app.use(cors());
+
 // Define a route for the root URL
 app.get("/", (req, res) => {
   // Send a response to the client
@@ -28,10 +31,58 @@ app.get("/location", async (req, resp) => {
 
 // Define a route for the /restaurants URL
 app.get("/restaurants", async (req, resp) => {
+  // let id = req.params.id;
+  let stateId = Number(req.query.stateId);
+  let mealId = Number(req.query.mealId);
+  console.log(mealId + "is the mealId");
+  let query = {};
+  if (stateId && mealId) {
+    query = { state_id: stateId, "mealTypes.mealtype_id": mealId };
+  } else if (stateId) {
+    query = { state_id: stateId };
+  } else if (mealId) {
+    query = { "mealTypes.mealtype_id": mealId };
+  }
+
   // Send a response to the client
   try {
     const restaurantsCollection = db.collection("restaurants");
-    const result = await restaurantsCollection.find().toArray();
+    const result = await restaurantsCollection.find(query).toArray();
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+app.get("/filters/:mealId", async (req, resp) => {
+  let query = {};
+  let mealId = Number(req.params.mealId);
+  let cuisineId = Number(req.query.cuisineId);
+  let lcost = Number(req.query.lcost);
+  let hcost = Number(req.query.hcost);
+  let sort = { cost: 1 }; // bydefault it will be in ascending order
+
+  if (req.query.sort) {
+    sort = { cost: req.query.sort };
+  }
+
+  // sort = { cost: -1 }; // sort in descending order
+
+  if (cuisineId) {
+    query = {
+      "mealTypes.mealtype_id": mealId,
+      "Cuisines.Cuisine_id": cuisineId,
+    };
+  } else if (lcost && hcost) {
+    query = {
+      "mealTypes.mealtype_id": mealId,
+      $and: [{ cost: { $gt: lcost, $lt: hcost } }],
+    };
+  }
+  try {
+    const restaurantsCollection = db.collection("restaurants");
+    const result = await restaurantsCollection.find(query).sort(sort).toArray();
     resp.send(result);
   } catch (err) {
     console.log("Error retrieving data from MongoDB:", err);
