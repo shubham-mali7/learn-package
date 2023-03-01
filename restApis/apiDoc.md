@@ -37,8 +37,14 @@
 
 - Page 3
 
-  > Restaurant Detail
-  > Menue wrt restaurants
+# Restaurant Detail
+
+> http://localhost:9500/details/2
+> (http://localhost:9500/details/63f9b522c057cb4c130f67d9) // incase we need it wrt Object_id
+
+# Menue wrt restaurants
+
+> http://localhost:9500/menu/4
 
 - Page 4
 

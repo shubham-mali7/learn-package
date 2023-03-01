@@ -4,7 +4,8 @@ const express = require("express");
 const app = express();
 const port = 9500;
 let cors = require("cors");
-const { MongoClient } = require("mongodb");
+let mongo = require("mongodb");
+let MongoClient = mongo.MongoClient;
 const mongoUrl = "mongodb://0.0.0.0:27017/newProducts";
 //test is the name of database in which i have the lcations collection
 let db;
@@ -107,6 +108,40 @@ app.get("/mealType", async (req, resp) => {
 app.get("/Cuisines", (req, res) => {
   // Send a response to the client
   res.send("<h1>Hello World! from node and express in Cuisines route</h1>");
+});
+
+// Select restaurant on basis of _id
+app.get("/details/:restId", async (req, resp) => {
+  // let id = new mongo.ObjectId(req.params.restId); // ----doubt in this line
+  let id = Number(req.params.restId);
+
+  // Send a response to the client
+  try {
+    const restaurantsCollection = db.collection("restaurants");
+    const result = await restaurantsCollection
+      .find({ restaurant_id: id })
+      .toArray();
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+app.get("/menu/:restId", async (req, resp) => {
+  let id = Number(req.params.restId);
+
+  // Send a response to the client
+  try {
+    const restaurantsCollection = db.collection("menu");
+    const result = await restaurantsCollection
+      .find({ restaurant_id: id })
+      .toArray();
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
 });
 
 (async () => {
