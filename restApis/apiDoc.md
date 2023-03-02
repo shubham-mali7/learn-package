@@ -48,15 +48,38 @@
 
 - Page 4
 
-  > Menue Details
-  > Place Order(POST)
+  # Menue Details
+
+  # Place Order(POST)
+
+  > localhost:9500/placeOrder
+
+  {
+  "\_id": "640061a3040a8ebce6cdf191",
+  "Order_id": 1,
+  "name": "Shubham",
+  "email": "shubham@gmail.com",
+  "address": "Hno 23,Sector 1",
+  "phone": 768768686,
+  "cost": 1000,
+  "menuItem": [
+  3,
+  5,
+  7
+  ]
+  }
 
 - Page 5
 
-  > List of all order
-  > List of all order wrt email
-  > Update the order (Put)
-  > Delete Order (Delete)
+  # List of all order
+
+  > localhost:9500/viewOrder
+
+  # List of all order wrt email
+
+  # Update the order (Put)
+
+  # Delete Order (Delete)
 
 /////////////////////////////////////////
 

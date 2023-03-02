@@ -5,6 +5,7 @@ const app = express();
 const port = 9500;
 let cors = require("cors");
 let mongo = require("mongodb");
+let bodyParser = require("body-parser");
 let MongoClient = mongo.MongoClient;
 const mongoUrl = "mongodb://0.0.0.0:27017/newProducts";
 //test is the name of database in which i have the lcations collection
@@ -12,6 +13,9 @@ let db;
 
 // middleware ----> Supporting library
 app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
 
 // Define a route for the root URL
 app.get("/", (req, res) => {
@@ -128,6 +132,20 @@ app.get("/details/:restId", async (req, resp) => {
   }
 });
 
+/// For menu ----------------
+app.get("/menu", async (req, resp) => {
+  // Send a response to the client
+  try {
+    const restaurantsCollection = db.collection("menu");
+    const result = await restaurantsCollection.find().toArray();
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+// Menu with respect to restaurants
 app.get("/menu/:restId", async (req, resp) => {
   let id = Number(req.params.restId);
 
@@ -137,6 +155,25 @@ app.get("/menu/:restId", async (req, resp) => {
     const result = await restaurantsCollection
       .find({ restaurant_id: id })
       .toArray();
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+// PlaceOrder --------- PostApi
+
+app.post("/placeOrder", async (req, resp) => {
+  console.log(req.body);
+  let result = await db.collection("orders").insertOne(req.body);
+  resp.send("Order Placed");
+});
+
+app.get("/viewOrder", async (req, resp) => {
+  try {
+    const restaurantsCollection = db.collection("orders");
+    const result = await restaurantsCollection.find().toArray();
     resp.send(result);
   } catch (err) {
     console.log("Error retrieving data from MongoDB:", err);

@@ -111,3 +111,8 @@ QueryParams
 > What we pass after ? 
 > No need to define if we want to use it 
 > Should be used for passing multiple values 
+
+
+//------ > Live mongoDB URL
+
+mongodb+srv://<dev>:<test-test123>@cluster0.7xjwp6p.mongodb.net/?retryWrites=true&w=majority
