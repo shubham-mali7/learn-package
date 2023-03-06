@@ -116,3 +116,55 @@ QueryParams
 //------ > Live mongoDB URL
 
 mongodb+srv://<dev>:<test-test123>@cluster0.7xjwp6p.mongodb.net/?retryWrites=true&w=majority
+
+
+db.orders.updateOne(
+  {consition},
+  {
+    $set: {
+      data
+    }
+  }
+)
+
+
+db.orders.remove({_id})
+
+
+// not getting response in update and delete but functioning properly --------- doubt
+------------------------------------------ Backup if new code dosent works
+
+ db.collection("menu")
+      .find({ menu_id: { $in: req.body.id } })
+      .toArray((err, result) => {
+        if (err) throw err;
+        resp.send(result);
+      });
+
+-------------------------------------------
+      // update Order
+
+app.put("/updateOrder/:id", async (req, resp) => {
+  let oId = Number(req.params.id);
+  await db.collection("orders").updateOne(
+    { Order_id: oId },
+    {
+      $set: {
+        status: req.body.status,
+        bank_name: req.body.bank_name,
+        date: req.body.date,
+      },
+    },
+    (err, result) => {
+      if (err) throw err;
+      resp.send("Order Updated");
+    }
+  );
+});
+
+
+---------------------------
+await db.collection("orders").deleteOne({ Order_id: oId }, (err, result) => {
+    if (err) throw err;
+    resp.send("Order Deleted");
+  });

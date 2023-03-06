@@ -162,6 +162,25 @@ app.get("/menu/:restId", async (req, resp) => {
   }
 });
 
+// menu user selected-----------
+
+app.post("/menuItem", async (req, resp) => {
+  if (Array.isArray(req.body.id)) {
+    try {
+      const menuCollection = db.collection("menu");
+      const result = await menuCollection
+        .find({ menu_id: { $in: req.body.id } })
+        .toArray();
+      resp.send(result);
+    } catch (err) {
+      console.log("Error retrieving data from MongoDB:", err);
+      resp.status(500).send("Error retriving data from MOngoDB");
+    }
+  } else {
+    resp.send("Invalid Input");
+  }
+});
+
 // PlaceOrder --------- PostApi
 
 app.post("/placeOrder", async (req, resp) => {
@@ -171,10 +190,57 @@ app.post("/placeOrder", async (req, resp) => {
 });
 
 app.get("/viewOrder", async (req, resp) => {
+  let email = req.query.email;
+  let query = {};
+  if (email) {
+    query = { email: email };
+  } else {
+    query = {};
+  }
   try {
     const restaurantsCollection = db.collection("orders");
-    const result = await restaurantsCollection.find().toArray();
+    const result = await restaurantsCollection.find(query).toArray();
     resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+// update Order
+
+app.put("/updateOrder/:id", async (req, resp) => {
+  let oId = Number(req.params.id);
+
+  try {
+    const ordersCollection = db.collection("orders");
+    const result = await ordersCollection.updateOne(
+      { Order_id: oId },
+      {
+        $set: {
+          status: req.body.status,
+          bank_name: req.body.bank_name,
+          date: req.body.date,
+        },
+      }
+    );
+    resp.send(result);
+  } catch (err) {
+    console.log("Error retrieving data from MongoDB:", err);
+    resp.status(500).send("Error retriving data from MOngoDB");
+  }
+});
+
+// Delete Order
+
+app.delete("/deleteOrder/:id", async (req, resp) => {
+  // let _id = new mongo.ObjectId(req.params.id);
+  let oId = Number(req.params.id);
+
+  try {
+    const ordersCollection = db.collection("orders");
+    const result = await ordersCollection.deleteOne({ Order_id: oId });
+    resp.send("Order Deleted");
   } catch (err) {
     console.log("Error retrieving data from MongoDB:", err);
     resp.status(500).send("Error retriving data from MOngoDB");

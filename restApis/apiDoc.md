@@ -48,11 +48,17 @@
 
 - Page 4
 
-  # Menue Details
+  # Menue Details (POST)
+
+  > http://localhost:9500/menuItem
+
+  {
+  "id":[1,2,3]
+  }
 
   # Place Order(POST)
 
-  > localhost:9500/placeOrder
+  > http://localhost:9500/placeOrder
 
   {
   "\_id": "640061a3040a8ebce6cdf191",
@@ -73,13 +79,25 @@
 
   # List of all order
 
-  > localhost:9500/viewOrder
+  > http://localhost:9500/viewOrder
 
   # List of all order wrt email
 
+  > http://localhost:9500/viewOrder?email=shubham@gmail.com
+
   # Update the order (Put)
 
+  > http://localhost:9500/updateOrder/4
+
+  {
+  "status": "Pending",
+  "bank_name": "SBI-bank",
+  "date": "06/03/2023"
+  }
+
   # Delete Order (Delete)
+
+  > http://localhost:9500/deleteOrder/7
 
 /////////////////////////////////////////
 
